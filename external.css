@@ -216,4 +216,9 @@ body{
     
     }
 
+    .maincontent img{
+        display: none;
+    
+    }
+
 }
