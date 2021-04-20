@@ -22,12 +22,13 @@ function verify(){
 		if(formDetails[i] == ""){
 			console.log("Please make sure to complete all fields")
 			alert('Please make sure to complete all fields')
-			return;
+			return false;
 		}
 	}
 	// If the 4th element (phone number) in array isn't made up of numbers, alert the user
 	if(!formDetails[3].match(numbers)){
 			console.log('numbers only');
 			alert('Please use numbers only in the phone number field');
+			return false;
 		}
 	}
