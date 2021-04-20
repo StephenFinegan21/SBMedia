@@ -62,10 +62,10 @@ body{
 /*about us*/
 
 .maincontent{
-    width: 40%;
+    width: 60%;
     margin: auto;   /* Centers div*/
     text-align: center;
-	padding: 10%;
+	padding: 05%;
 	font-size: 18px;
 	text-align: center;
 	font-family: 'Playfair Display', serif;
