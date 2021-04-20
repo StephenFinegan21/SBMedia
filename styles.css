@@ -46,7 +46,11 @@ p, h3{
     font-family: 'Playfair Display', serif;
 }
 
-
+.button-link{
+    color:var(--light-grey-color);
+    text-decoration: none;
+}
+    
 
 
 
@@ -69,7 +73,7 @@ p, h3{
 
 /* Styling when user hovers over a link in the header */
 .header a:hover{
-    color: var(--dark-color);
+    color: var(--purple-color);
 }
 
 /* Div that holds the Site Logo */
@@ -145,7 +149,6 @@ img{
 #grow-heading{
     font-size: 9.5rem;
 }
-
 .welcome-page h2{
     font-size: 2rem;
     color: var(--dark-color);
@@ -154,9 +157,6 @@ img{
     margin-top: 10px;
 }
 
-
-/* ---- AboutSection ----*/
-
 .centered-para{
     display: block;
     width: 40%;
@@ -164,6 +164,15 @@ img{
     margin-bottom: 10px;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -247,6 +256,9 @@ img{
 
 
 
+
+
+
 /* -----------    Pricing   -----------------  */
 
 .pricing-container{
@@ -310,35 +322,7 @@ h3{
 
 
 
-
-
-
-
-
-/*form*/
-#contactform{
-	margin: auto;
-	width: 80%;
-	height: 80%;
-}
-
-#contactUs{
-
-}
-
-#contact{
-	
-}
-
-.halfscale{
-
-}
-
-.fullscale{
-	
-}
-
-/*footer content*/
+/*-------------- footer content -------------- */
 .footer{
     font-family: 'Roboto', sans-serif;
 	text-align: center;
@@ -449,7 +433,7 @@ h3{
         transform: rotate(90deg);
     }
 
-
+    /* this will show when the burger mwnu is clicked */
     #mobile-menu{
         z-index: 1;
         position: fixed;
@@ -459,11 +443,10 @@ h3{
         height: 100%;
         background-color: #17252A;
         z-index: 1;
-        
     }
 
     #mobile-menu ul{
-        display: block;
+        display: block;  /*displays the elements underneathe them */
         width: 100%;
         margin: auto;
         margin-top: 100px;
@@ -480,13 +463,8 @@ h3{
     }
 
     .header a:hover{
-        color: var(--green-color);
+        color: var(--purple-color);
     }
-
-
-
-
-
 
 
 
@@ -497,7 +475,7 @@ h3{
     }
         
     #welcome-text-container{
-        width: 80%;
+        width: 100%;
         margin: auto;
         margin-top: 40px;
         text-align: center;
@@ -531,7 +509,7 @@ h3{
 
     .centered-para{
         display: block;
-        width: 80%;
+        width: 100%;
         margin: auto;
         margin-bottom: 10px;
         text-align: center;
@@ -594,14 +572,17 @@ h3{
 
     #floating-contact-button{
                
-        visibility: visible;
+        display: block;
         color: var(--purple-color);
-        font-size: 1.5rem;
+        font-size: 2rem;
         position: fixed;
-        top: 50%;
+        top: 90%;
         left: 40%;
         width: 100%;
-        
+    }
+
+    #floating-contact-button:hover{
+        color: var(--green-color);
     }
 
 }
