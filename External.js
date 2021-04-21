@@ -10,6 +10,7 @@ function verify(){
 
 	//Then store these variables in an array (Be used to check if 'filled in' or 'blank')
 	let formDetails = [userName, company, email, phone, message];
+	
 
 	/*Using this variable to validate the phone number to hold only numbers
 	Found how to do this on https://www.w3resource.com/javascript/form/all-numbers.php */
