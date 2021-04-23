@@ -61,4 +61,5 @@ $(document).scroll(function () {
 
     
   });
-  //https://stackoverflow.com/questions/7715124/do-something-if-screen-width-is-less-than-960-px
+  
+  //https://stackoverflow.com/questions/7715124/do-something-if-screen-width-is-less-than-960-px tutorial where i learned about triggering functions when user scrolls to certain point
