@@ -1,6 +1,8 @@
 
 
-function verify(){
+exports.verify = () =>{
+
+	let formVerified = true;
 	//When the form submits store the form inputs in variables
 	let userName = document.getElementById('inputName').value;
 	let company = document.getElementById('inputCompany').value
@@ -23,13 +25,18 @@ function verify(){
 		if(formDetails[i] == ""){
 			console.log("Please make sure to complete all fields")
 			alert('Please make sure to complete all fields')
-			return false;
+			formVerified = false;
+			return formVerified;
 		}
 	}
 	// If the 4th element (phone number) in array isn't made up of numbers, alert the user
 	if(!formDetails[3].match(numbers)){
 			console.log('numbers only');
 			alert('Please use numbers only in the phone number field');
-			return false;
+			formVerified = false;
+			return formVerified;
 		}
+	else{
+		return formVerified;
+	}
 	}
