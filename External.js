@@ -1,6 +1,6 @@
 
 
-exports.verify = () =>{
+function verify(){
 
 	let formVerified = true;
 	//When the form submits store the form inputs in variables
